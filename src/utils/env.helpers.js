@@ -1,0 +1,1 @@
+export const getEnvironmentVariable = (name) => import.meta.env[name]

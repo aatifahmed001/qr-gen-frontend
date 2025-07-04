@@ -3,6 +3,10 @@ import {getEnvironmentVariable} from '../utils/env.helpers'
 const serviceURL = new URL(getEnvironmentVariable('VITE_API_HOST'));
 const baseURL = serviceURL + '/userapi'
 
+console.log("🧩 VITE_API_HOST:", serviceURL);
+console.log("🧩 baseURL:", baseURL);
+console.log("🧩 registerUser endpoint:", apiEndpoints.registerUser);
+
 export const apiEndpoints = {
     baseURL: baseURL,
     auth: `${baseURL}/authenticate`,

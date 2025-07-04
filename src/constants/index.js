@@ -1,6 +1,6 @@
 import {getEnvironmentVariable} from '../utils/env.helpers'
 
-const serviceURL = getEnvironmentVariable('VITE_API_HOST')
+const serviceURL = new URL(getEnvironmentVariable('VITE_API_HOST'));
 const baseURL = serviceURL + '/userapi'
 
 export const apiEndpoints = {

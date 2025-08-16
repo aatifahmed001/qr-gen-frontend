@@ -1,12 +1,12 @@
 import {getEnvironmentVariable} from '../utils/env.helpers'
 
-// const serviceURL = new URL(getEnvironmentVariable('VITE_API_HOST'));
-// const baseURL = serviceURL + '/userapi'
-const serviceURL = getEnvironmentVariable('VITE_API_HOST'); // leave as string
-const baseURL = new URL('/userapi/', serviceURL).toString();
+const serviceURL = new URL(getEnvironmentVariable('VITE_API_HOST'));
+const baseURL = serviceURL + '/userapi'
+// const serviceURL = getEnvironmentVariable('VITE_API_HOST'); // leave as string
+// const baseURL = new URL('/userapi/', serviceURL).toString();
 
-console.log("🧩 VITE_API_HOST:", serviceURL);
-console.log("🧩 baseURL:", baseURL);
+// console.log("🧩 VITE_API_HOST:", serviceURL);
+// console.log("🧩 baseURL:", baseURL);
 // console.log("🧩 registerUser endpoint:", apiEndpoints.registerUser);
 
 export const apiEndpoints = {
